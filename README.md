@@ -68,7 +68,7 @@ for proper structure, each panel is an object
 
 `software_info` - shows current versions of node and libraries installed locally (not globally installed packages!)
 
-`profile` - total req processing time. middleware, param, and route timings. (not a default panel; does not work with express 4.x yet)
+`profile` - total req processing time. middleware, param, and route timings. (default panel)
 
 `other_requests` - shows details on non-page requests made to the server (not a default panel, use extra_panels setting to invoke. `{extra_panels: ['other_requests']}`)
 
@@ -82,9 +82,14 @@ for proper structure, each panel is an object
 * save more information about non-injected requests
 * improve styling
 * show session panel on standalone mount
+* profile panel: express 4.x  - total req processing time
 
 
 ### Changelog
+* **1.1.2**
+  * support express 4.x  profile
+
+
 * **1.1.1**
   * add `extra_attrs` option to add html attributes to the rendered EDT container
   * add `sort` option (thanks to vaughan99)
